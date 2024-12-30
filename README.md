@@ -45,7 +45,7 @@ Managing content with expiration dates can be challenging, especially when deadl
 
 # Technologies Used
     Backend: Flask
-    Frontend: HTML, CSS (Bootstrap optional)
+    Frontend: HTML, CSS 
     Database: SQLite
 
 # Add Your Code
