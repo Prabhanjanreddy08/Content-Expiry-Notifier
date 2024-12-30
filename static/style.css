@@ -1,0 +1,161 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+h1 {
+    color: #444;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* List item styling */
+li {
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Expiring soon highlight */
+.expiring-soon {
+    background-color: #ffe5e5;
+    border-color: #ff4d4d;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Delete button */
+.btn-delete {
+    padding: 8px 15px;
+    background-color: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    margin-left: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-delete:hover {
+    background-color: #e60000;
+    transform: translateY(-2px);
+}
+
+/* Form container styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form label styling */
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Input and textarea styling */
+input, textarea, button {
+    margin-top: 5px;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit button styling */
+button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+/* Link styling */
+.content-link {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.content-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+div {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
