@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Expiry Notifier</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Content Expiry Notifier</h1>
+    <a href="/add" class="btn">Add Content</a>
+    <ul>
+        {% for item in items %}
+        <li class="{% if item in expiring_soon %}expiring-soon{% endif %}">
+            <a href="/content/{{ item[0] }}" class="content-link"><strong>{{ item[1] }}</strong></a>
+            :(Expires on: {{ item[3] }})
+            <a href="/delete/{{ item[0] }}" class="btn-delete">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
