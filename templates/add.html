@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Management</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Content Management</h1>
+    
+    <!-- Add Content Form -->
+    <form action="/add" method="POST">
+        <h2>Add New Content</h2>
+        <label >Content Name:</label>
+        <input type="text" id="title" name="title" placeholder="Enter the content name" required>
+        
+        <label for="expiry_date">Expiry Date:</label>
+        <input type="date" id="expiry_date" name="expiry_date" required>
+        
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" placeholder="Write a brief description..." required></textarea>
+        
+        <button type="submit" class="btn">Add Content</button>
+    </form>
+</body>
+</html>
